@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout by grid area</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container{
+            width: 100%;
+            height: 100%;
+            background-color: chartreuse;
+            pad: 4rem;
+            gap: 1rem;
+            display: grid;
+            grid-template-areas:
+            "blocked1 blocked1 blocked1"
+            "blocked2 blocked3 blocked3"
+            "blocked4 blocked4 blocked4"
+            ;
+            /* grid-template-columns: repeat(auto maxmin ); */
+            
+        }
+
+        .item{
+            background-color: chocolate;
+            border: 2px solid black;
+            pad: 1rem;
+        }
+        #blocked1{
+            grid-area: blocked1;
+        }
+
+        #blocked2{
+            grid-area: blocked2;
+        }
+        #blocked3{
+            grid-area: blocked3;
+        }
+        #blocked4{
+            grid-area: blocked4;
+        }
+        #blocked5{
+            grid-area: blocked5;
+        }
+        #blocked6{
+            grid-area: blocked6;
+        }
+    </Style>
+</head>
+<body>
+    <div class="container">
+            <div class="item" id="blocked1">blocked1</div>
+            <div class="item" id="blocked2">blocked2</div>
+            <div class="item" id="blocked3">blocked3</div>
+            <div class="item" id="blocked4">blocked4</div>
+            <!-- <div class="item" id="blocked5">blocked5</div>
+            <div class="item" id="blocked6">blocked6</div> -->
+
+    </div>
+</body>
+</html>

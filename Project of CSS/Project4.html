@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+
+      .cta {
+        display: block;
+        align-self: end;
+        margin: 1em 0 0.5em 0;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0d0d0d;
+        padding: 0.7em;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .flow > * + * {
+        margin-top: var(--flow-space, 1.25em);
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        user-select: none;
+        opacity: var(--opacity, 0);
+        -webkit-mask: radial-gradient(
+          25rem 25rem at var(--x) var(--y),
+          #000 1%,
+          transparent 50%
+        );
+        transition: 40ms mask ease;
+        will-change: mask;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cards_card card">
+        <h2 class="card_heading">Pro</h2>
+        <p class="card_price">$19.99</p>
+
+        <ul role="list" class="card_bullets flow">
+          <li>Acces to advaced workouts and nutrition plans</li>
+          <li>Priortiy Email support</li>
+          <li>Exclusive access to live Q&A sessions</li>
+        </ul>
+        <a href="#pro" class="card_cta cta"> Upgrade to pro </a>
+      </div>
+    </div>
+  </body>
+</html>

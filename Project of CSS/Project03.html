@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .items {
+        width: 25%;
+        height: 70%;
+        background-color: azure;
+        border-radius: 25px;
+      }
+      #img {
+        width: 100%;
+        height: 30%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+      .content{
+        display: flex;
+        gap: 1rem;
+        padding: 2rem;
+        flex-direction: column;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .box{
+        height: 50%;
+        width: 50%;
+        border: 2px solid black;
+        background-color: brown;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cont">
+
+      <div class="items">
+
+         <img  id="img" src="New-Project-18.jpg" />
+
+         <div class="content">
+
+          <h2><center>Order Summary</center></h2>
+
+          <p id="p">
+            <center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                modi laboriosam eum ipsum porro? Incidunt laudantium a hic veritatis
+                asperiores!</center>
+          </p>
+          <div class="box">
+            <div class="items"></div>
+            <div class="items"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
